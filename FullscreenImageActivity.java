@@ -48,7 +48,7 @@ public class FullscreenImageActivity extends AppCompatActivity {
         setContentView(R.layout.fullscreen);
         Bundle i = getIntent().getExtras();
         String image_id = i.getString("imageurl");
-        String url = "https://pixabay.com/api/?key=4587443-6a22020cf80f05f3b181d7fae&response_group=high_resolution&id=" + image_id + "&pretty=true";
+        String url = "https://pixabay.com/api/?key=YOUR_API_KEY&response_group=high_resolution&id=" + image_id + "&pretty=true";
         fullImage = (ImageView) findViewById(R.id.fullscreen_content);
         fetchFullResolutionImage fetch = new fetchFullResolutionImage();
         fetch.execute(url);
