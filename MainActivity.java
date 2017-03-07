@@ -87,7 +87,7 @@ public class MainActivity extends AppCompatActivity {
                     //  Requesting wallpapers from the server
                     GetWallpaperTask getWallpaperTask = new GetWallpaperTask();
                     txt = editText.getText().toString().replace(" ", "+");
-                    url = "https://pixabay.com/api/?key=4587443-6a22020cf80f05f3b181d7fae&per_page=" + noOfImages + "&pretty=true&image_type=photo&q=" + txt + "&response_group=high_resolution";
+                    url = "https://pixabay.com/api/?key=YOUR_API_KEY&per_page=" + noOfImages + "&pretty=true&image_type=photo&q=" + txt + "&response_group=high_resolution";
                     getWallpaperTask.execute(url);
                     try {
                         imm.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
