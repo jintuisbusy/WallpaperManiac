@@ -12,7 +12,7 @@ import com.bumptech.glide.Glide;
 import java.util.List;
 
 /**
- * Created by Jack on 2/28/2017.
+ * Created by Jintu Kumar Das on 2/28/2017.
  */
 public class WallpaperAdapter extends ArrayAdapter<Wallpaper>{
 
